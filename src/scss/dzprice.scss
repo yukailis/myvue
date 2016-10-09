@@ -1,0 +1,99 @@
+a{
+	text-decoration:none;
+	color:#000;
+}
+li{
+	list-style:none;
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+.header{
+	width:100%;
+	height:40px;
+	background:#2ab2ec;
+	color:#fff;
+	@include pos(relative);
+	h1{
+		font-size:20px;
+		line-height:40px;
+		text-align:center;
+		font-weight:normal;
+	}
+	a{
+		width:9px;
+		height:14px;
+		@include pos;
+		left:2%;
+		top:50%;
+		margin-top:-7px;
+		background:url(../img/bplace/back.png) no-repeat;
+		background-size:contain;
+	}
+}
+.main{
+	width:100%;
+	height:100%;
+	-webkit-box-flex:1;
+	padding:3%;
+	overflow:hidden;
+	overflow-y:scroll;
+}
+.title{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+
+}
+#tit{
+	width:100%;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+.dl{
+	width:100%;
+	a{
+		width:48%;
+		margin-bottom:12px;
+		display:block;
+	}
+	a:nth-of-type(2n){
+		float:right;
+	}
+	a:nth-of-type(2n+1){
+		float:left;
+	}
+	dl{
+		width:100%;
+		dt{
+			width:100%;
+			img{
+				width:100%;
+			}
+		}
+		dd{
+			font-size:12px;
+			p{
+				padding-top:10px;
+			}
+			span:nth-of-type(1){
+				color:red;
+				float:left;
+				padding-top:7px;
+			}
+			span:nth-of-type(2){
+				color:red;
+				float:right;
+				padding-top:7px;
+				font-size:12px;
+				i{
+					font-size:12px;
+					color:#b5b5b5;
+					font-style:normal;
+				}
+			}
+		}
+	}
+	
+}

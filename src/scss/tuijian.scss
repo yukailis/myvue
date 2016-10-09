@@ -1,0 +1,182 @@
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+.container{
+	height:100%;
+	width:100%;
+	@include pos(relative);
+	overflow:hidden;
+	overflow-y:scroll;
+	background:#f8f8f8;
+	-webkit-box-flex:1;
+}
+.head{
+	@include pos;
+	width:100%;
+	height:44px;
+	left:0;
+	top:0;
+	z-index:999;
+	p:nth-of-type(1){
+		height:100%;
+		width:17%;
+		@include pos;
+		left:0;
+		top:0;
+		padding-left:8px;
+		padding-top:10px;
+		a{
+			color:#fff;
+			font-size:12px;
+			padding-right:5px;
+		}
+		img{
+			height:5px;
+			width:10px;
+		}
+	}
+	#near{
+		@include pos;
+		right:3.8%;
+		font-size:12px;
+		color:#fff;
+		top:0;
+		line-height:44px;
+	}
+	h1{
+		font-size:16px;
+		height:100%;
+		width:100%;
+		text-align:center;
+		color:#fff;
+		text-align:center;
+		line-height:44px;
+		font-weight:normal;
+	}
+}
+.swiper-container{
+	width:100%;
+}
+.swiper-slide{
+	width:100%;		
+}
+.swiper-container img{
+	width: 100%;
+	height: auto;
+}
+.title{
+	width:100%;
+	height:25px;
+	line-height:25px;
+	padding-left:3%;
+	font-size:14px;
+	margin-top:19px;
+	img{
+		width:2px;
+		height:9px;
+		vertical-align:middle;
+		margin-right:2%;
+	}
+	a{
+		float:right;
+		color:#000;
+		margin-right:3%;
+		font-size:12px;
+	}
+}
+.z{
+	width:100%;
+	height:132px;
+	margin-top:10px;
+	margin-bottom:10px;
+	@include pos(relative);
+	ul{
+		width:100%;
+		height:132px;
+		display:-webkit-flex;
+
+		li{
+			-webkit-flex:1;
+			margin-left:2%;
+			@include pos(relative);
+			background:#fff;
+			img{
+				width:120px;
+				height:auto;
+			}
+			p{
+				font-size:12px;
+				padding:3%;
+				line-height:14px;
+			}
+			span{
+				@include pos;
+				color:#ff0000;
+				font-size:14px;
+				right:2%;
+				bottom:10px;
+			}
+		}
+	}	
+}
+.tx{
+	width:100%;
+	height:auto;
+	display:-webkit-box;
+	padding:3%;
+	p{
+		width:50%;
+		height:100%;
+		-webkit-box-flex:1;
+		img{
+			width:100%;
+			height:auto;
+		}
+	}
+	p:nth-of-type(1){
+		margin-right:2%;
+	}	
+}
+.footer{
+	width:100%;
+	height:48px;
+	background:#eeeeee;
+	a{
+		text-align:center;
+		width:25%;
+		float:left;	
+		font-size:12px;
+		color:#171616;
+		padding-top:2px;
+	}
+	a:nth-of-type(1){
+		img{
+			width:25px;
+			height:27px;
+		}
+	}
+	a:nth-of-type(2){
+		img{
+			width:31px;
+			height:26px;
+		}
+	}
+	a:nth-of-type(3){
+		img{
+			width:25px;
+			height:26px;
+		}
+	}
+	a:nth-of-type(4){
+		img{
+			width:29px;
+			height:26px;
+		}
+	}
+}

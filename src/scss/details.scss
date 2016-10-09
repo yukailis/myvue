@@ -1,0 +1,162 @@
+a{
+	text-decoration:none;
+	color:#000;
+}
+li{
+	list-style:none;
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+.container{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	overflow-y:scroll;
+	-webkit-box-flex:1;
+}
+.head{
+	width:100%;
+	height:40px;
+	color:#fff;
+	@include pos;
+	h1{
+		font-size:18px;
+		line-height:40px;
+		text-align:center;
+		font-weight:normal;
+	}
+	#back{
+		width:9px;
+		height:14px;
+		@include pos;
+		left:2%;
+		top:50%;
+		margin-top:-7px;
+		background:url(../img/bplace/back.png) no-repeat;
+		background-size:contain;
+	}
+	#love{
+		width:18px;
+		height:16px;
+		@include pos;
+		right:3%;
+		top:50%;
+		margin-top:-8px;
+		background:url(../img/detail/love.png) no-repeat;
+		background-size:contain;
+	}
+}
+#tit{
+	width:100%;
+}
+.tells{
+	width:100%;
+	height:62px;
+	padding-left:3%;
+	h4{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size:14px;
+	}
+	span{
+		font-size:12px;
+		color:#a0a0a0;
+		i{
+			font-style:normal;
+			color:red;
+			font-size:16px;
+		}
+	}
+	span:nth-of-type(2){
+		margin-left:3%;
+		margin-right:9%;
+	}
+	span:nth-of-type(4){
+		float:right;
+		margin-right:3%;
+	}
+}
+.line{
+	width:100%;
+	height:15px;
+	background:#f8f8f8;
+}
+.line1{
+	width:100%;
+	height:15px;
+	background:#f8f8f8;
+	margin-top:5px;
+}
+.bt{
+	width:100%;
+	height:30px;
+	border-bottom:2px solid #f5f5f5;
+	font-size:12px;
+	line-height:30px;
+	img{
+		height:100%;
+		padding-left:3%;
+		vertical-align:middle;
+	}
+}
+ul{
+	padding-left:3%;
+	li{
+		font-size:12px;
+		padding-top:10px;
+
+	}
+}
+.bgbox{
+	width:100%;
+	padding:3%;
+}
+.bg{
+	width:100%;
+	height:27px;
+	background:#aae0f7;
+	line-height:27px;
+	font-size:12px;	
+	padding-left:3px;
+	color:#656565;
+}
+h6{
+	padding-left:4%;
+	font-weight:normal;
+	padding-top:9px;
+	padding-bottom:8px;
+}
+ol{
+	padding:3%;
+	width:100%;
+	li{
+		width:100%;
+		font-size:12px;
+		line-height:22px;
+		color:#858585;
+	}
+}
+.footer{
+	width:100%;
+	height:50px;
+	display:-webkit-box;
+	p{
+		line-height:50px;
+		text-align:center;
+		color:#fff;
+		font-size:14px;
+	}
+	p:nth-of-type(1){
+		width:70%;
+		height:100%;
+		background:#7f7f7f;
+
+	}
+	p:nth-of-type(2){
+		width:30%;
+		height:100%;
+		background:#e51d21;
+	}
+}
+

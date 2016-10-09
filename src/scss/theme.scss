@@ -1,0 +1,32 @@
+dl{
+	width:100%;
+	height:122px;
+	display:-webkit-box;
+	margin-top:10px;
+	dt{
+		height:100%;
+		margin-right:8px;
+		img{
+			height:100%;
+		}
+	}
+	dd{
+		-webkit-box-flex:1;
+		margin-top:18px;
+		.p1{
+			font-size:12px;
+			line-height:20px;
+		}
+		.p2{
+			-webkit-text-sizeadjust:none;
+			font-size:10px;
+			color:#2bb3ed;
+			margin-top:10%;
+			span{
+				color:#b5b5b5;
+				float:right;
+			}
+
+		}
+	}
+}                                                                                                                                                                                                                                                                  

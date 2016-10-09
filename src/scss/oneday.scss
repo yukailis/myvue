@@ -1,0 +1,71 @@
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+.header{
+	width:100%;
+	height:40px;
+	background:#2ab2ec;
+	color:#fff;
+	@include pos(relative);
+	h1{
+		font-size:20px;
+		line-height:40px;
+		text-align:center;
+		font-weight:normal;
+	}
+	a{
+		width:9px;
+		height:14px;
+		@include pos;
+		left:2%;
+		top:50%;
+		margin-top:-7px;
+		background:url(../img/bplace/back.png) no-repeat;
+		background-size:contain;
+	}
+}
+.main{
+	width:100%;
+	height:100%;
+	-webkit-box-flex:1;
+	overflow:hidden;
+	overflow-y:scroll;
+	.dl{
+		width:100%;
+		padding:3%;
+		display:-webkit-box;
+		dl{
+			width:47%;
+			height:auto;
+			-webkit-box-flex:1;
+			dt{
+				width:100%;
+				img{
+					width:100%;
+				}
+			}
+			dd{
+				width:100%;
+				padding-left:3.8%;
+				h4{
+					font-size:13px;
+					font-weight:normal;
+					padding-top:10px;
+					padding-bottom:10px;
+				}
+				p{
+					font-size:12px;
+				}
+			}
+		}
+		dl:nth-of-type(1){
+			margin-right:2%;
+		}
+	}	
+}
